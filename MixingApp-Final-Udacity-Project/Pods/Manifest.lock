@@ -1,0 +1,16 @@
+PODS:
+  - VerticalSlider (2.0.0)
+
+DEPENDENCIES:
+  - VerticalSlider
+
+SPEC REPOS:
+  trunk:
+    - VerticalSlider
+
+SPEC CHECKSUMS:
+  VerticalSlider: 655f2bc3ed062bac13e21c174f5ff93b8308571d
+
+PODFILE CHECKSUM: 26be049f719fd3b532357b84983b39652c59808c
+
+COCOAPODS: 1.8.4

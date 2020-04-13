@@ -1,0 +1,6 @@
+module Pods_MixingApp_Final_Udacity_Project {
+  umbrella header "Pods-MixingApp-Final-Udacity-Project-umbrella.h"
+
+  export *
+  module * { export * }
+}

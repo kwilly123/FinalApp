@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yKm-XD-c4P">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="ef8-Wc-Rr0">
+            <objects>
+                <navigationController id="yKm-XD-c4P" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="P45-ew-0XW">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="tTr-Wy-hvx" kind="relationship" relationship="rootViewController" id="44B-aB-ZlW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iB4-Xz-B24" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1404" y="129"/>
+        </scene>
+        <!--Projects-->
+        <scene sceneID="zKj-hE-dos">
+            <objects>
+                <tableViewController id="tTr-Wy-hvx" customClass="TableViewController" customModule="MixingApp_Final_Udacity_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="UDc-0Z-Vpb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="project" rowHeight="150" id="8rD-gH-qwU" customClass="ProjectCell" customModule="MixingApp_Final_Udacity_Project" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="150"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8rD-gH-qwU" id="ERN-Hp-kk0">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Project Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peX-Xe-xoS">
+                                            <rect key="frame" x="16" y="62" width="343" height="26"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Creation Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U6H-yJ-cHz">
+                                            <rect key="frame" x="16" y="118" width="343" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="creationDateLabel" destination="U6H-yJ-cHz" id="xhu-4Q-hsB"/>
+                                    <outlet property="projectNameLabel" destination="peX-Xe-xoS" id="bSw-F8-r9i"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="tTr-Wy-hvx" id="bQq-SA-CX0"/>
+                            <outlet property="delegate" destination="tTr-Wy-hvx" id="fcB-OT-xqu"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Projects" id="4Bn-O5-c6s"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="GoToProject" id="FEQ-wS-cPz"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XaI-RS-nU6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-628" y="128.57142857142858"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MixingApp_Final_Udacity_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ktL-gU-YhC">
+                                <rect key="frame" x="0.0" y="88" width="375" height="430"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="430" id="k2l-zD-GHU"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="pyk-sX-TVx">
+                                    <size key="itemSize" width="113" height="195"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="track" id="H0I-3k-DBc" customClass="TrackCell" customModule="MixingApp_Final_Udacity_Project" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="113" height="195"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="zN3-DL-xCc">
+                                            <rect key="frame" x="0.0" y="0.0" width="113" height="195"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X9f-uj-mVM" customClass="Knob" customModule="MixingApp_Final_Udacity_Project" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <connections>
+                                                        <action selector="knobValueChanged:" destination="H0I-3k-DBc" eventType="valueChanged" id="k7l-jl-ECV"/>
+                                                    </connections>
+                                                </view>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ai4-J9-F2n">
+                                                    <rect key="frame" x="15" y="113" width="30" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <state key="normal" title="S">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="soloButtonTapped:" destination="H0I-3k-DBc" eventType="touchUpInside" id="4a0-xp-kfw"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eS0-n8-YFU">
+                                                    <rect key="frame" x="15" y="75" width="30" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <state key="normal" title="M">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="muteButtonTapped:" destination="H0I-3k-DBc" eventType="touchUpInside" id="DiB-Pz-zT7"/>
+                                                    </connections>
+                                                </button>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JEX-0d-obe" customClass="VerticalSlider" customModule="VerticalSlider">
+                                                    <rect key="frame" x="68" y="8" width="30" height="179"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <connections>
+                                                        <action selector="volumeSliderValueChanged:" destination="H0I-3k-DBc" eventType="valueChanged" id="Muq-cy-0JX"/>
+                                                    </connections>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q8E-RN-f0v">
+                                                    <rect key="frame" x="0.0" y="20" width="60" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="highlightedColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H9A-zD-KvW">
+                                                    <rect key="frame" x="99" y="0.0" width="14" height="14"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0rO-49-TrB">
+                                                    <rect key="frame" x="11" y="151" width="38" height="36"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="113" height="195"/>
+                                        <connections>
+                                            <outlet property="importLight" destination="H9A-zD-KvW" id="7G0-Wb-zIw"/>
+                                            <outlet property="knob" destination="X9f-uj-mVM" id="DlB-xm-dPs"/>
+                                            <outlet property="muteButton" destination="eS0-n8-YFU" id="hld-oe-Ff5"/>
+                                            <outlet property="panValueLabel" destination="Q8E-RN-f0v" id="A64-wI-PdS"/>
+                                            <outlet property="soloButton" destination="Ai4-J9-F2n" id="3Ue-PE-pbP"/>
+                                            <outlet property="trackLabel" destination="0rO-49-TrB" id="f3c-JK-vaG"/>
+                                            <outlet property="volumeSlider" destination="JEX-0d-obe" id="Lky-nn-RLC"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="fqC-uQ-cde">
+                                <rect key="frame" x="37" y="604" width="301" height="9"/>
+                                <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="8" id="ZLm-4w-u6D"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="timeSliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Usz-EA-jye"/>
+                                </connections>
+                            </slider>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T9B-8n-ucS">
+                                <rect key="frame" x="0.0" y="576" width="375" height="202"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dZQ-dY-8dt" customClass="Knob" customModule="MixingApp_Final_Udacity_Project" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="125" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t53-cy-8Ye">
+                                                <rect key="frame" x="8" y="20" width="44" height="20"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <connections>
+                                            <action selector="knob1ValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="LVD-iC-asI"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FQ7-l9-7jR" customClass="Knob" customModule="MixingApp_Final_Udacity_Project" customModuleProvider="target">
+                                        <rect key="frame" x="104" y="125" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mnb-Md-jTc">
+                                                <rect key="frame" x="8" y="20" width="44" height="20"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <connections>
+                                            <action selector="knob2ValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="kNl-x9-Ngm"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PUh-RT-cKe" customClass="Knob" customModule="MixingApp_Final_Udacity_Project" customModuleProvider="target">
+                                        <rect key="frame" x="207" y="125" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3l-5e-Xbq">
+                                                <rect key="frame" x="8" y="20" width="44" height="20"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <connections>
+                                            <action selector="knob3ValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="wUB-qe-aWj"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PYm-a4-Vzg" customClass="Knob" customModule="MixingApp_Final_Udacity_Project" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="44" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TZ9-Nb-CCU">
+                                                <rect key="frame" x="8" y="20" width="44" height="20"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <connections>
+                                            <action selector="knob5ValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="07w-8W-luM"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TGa-8V-1ml" customClass="Knob" customModule="MixingApp_Final_Udacity_Project" customModuleProvider="target">
+                                        <rect key="frame" x="104" y="44" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DgV-qW-TUV">
+                                                <rect key="frame" x="8" y="20" width="44" height="20"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <connections>
+                                            <action selector="knob6ValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Naq-kp-bdd"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zYF-HB-wqB" customClass="Knob" customModule="MixingApp_Final_Udacity_Project" customModuleProvider="target">
+                                        <rect key="frame" x="207" y="44" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUc-ph-sXo">
+                                                <rect key="frame" x="8" y="20" width="44" height="20"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <connections>
+                                            <action selector="knob7ValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="1SG-8h-lbb"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U3S-gN-SJS" customClass="Knob" customModule="MixingApp_Final_Udacity_Project" customModuleProvider="target">
+                                        <rect key="frame" x="307" y="44" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XK1-wf-D5V">
+                                                <rect key="frame" x="8" y="20" width="44" height="20"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <connections>
+                                            <action selector="knob8ValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="iNb-II-H2i"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gwq-cm-Rhx" customClass="Knob" customModule="MixingApp_Final_Udacity_Project" customModuleProvider="target">
+                                        <rect key="frame" x="307" y="125" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jPH-Dh-bzR">
+                                                <rect key="frame" x="8" y="20" width="44" height="20"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <connections>
+                                            <action selector="knob4ValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="u6v-VV-o84"/>
+                                        </connections>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select a Track" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I7x-mg-LEr">
+                                        <rect key="frame" x="8" y="8" width="359" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="81" translatesAutoresizingMaskIntoConstraints="NO" id="4LJ-hg-2pg">
+                                <rect key="frame" x="15.333333333333343" y="566" width="344.33333333333326" height="23"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FaY-RG-hMs">
+                                        <rect key="frame" x="0.0" y="2.3333333333333321" width="25.333333333333332" height="18.666666666666668"/>
+                                        <color key="tintColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" backgroundImage="backward.end" catalog="system"/>
+                                        <connections>
+                                            <action selector="goBackButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jqG-Ja-8nD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VwW-Va-eBa">
+                                        <rect key="frame" x="106.33333333333334" y="1.9999999999999982" width="25.333333333333343" height="19"/>
+                                        <color key="tintColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" backgroundImage="play" catalog="system"/>
+                                        <connections>
+                                            <action selector="playButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XsK-TY-JnI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pDU-JO-u43">
+                                        <rect key="frame" x="212.66666666666666" y="2.6666666666666643" width="25.333333333333343" height="18"/>
+                                        <color key="tintColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" backgroundImage="backward" catalog="system"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6jZ-5Y-OXU">
+                                        <rect key="frame" x="319" y="0.99999999999999822" width="25.333333333333314" height="21.666666666666664"/>
+                                        <color key="tintColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" backgroundImage="arrow.2.circlepath" catalog="system"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ktL-gU-YhC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="1mR-K1-4Qm"/>
+                            <constraint firstItem="fqC-uQ-cde" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="39" id="EbR-5L-poV"/>
+                            <constraint firstItem="ktL-gU-YhC" firstAttribute="centerX" secondItem="4LJ-hg-2pg" secondAttribute="centerX" id="OnV-zv-4xI"/>
+                            <constraint firstItem="ktL-gU-YhC" firstAttribute="centerX" secondItem="fqC-uQ-cde" secondAttribute="centerX" id="Var-nh-FMN"/>
+                            <constraint firstItem="4LJ-hg-2pg" firstAttribute="top" secondItem="ktL-gU-YhC" secondAttribute="bottom" constant="48" id="ZjX-Gu-jJm"/>
+                            <constraint firstItem="ktL-gU-YhC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="b2W-6l-erl"/>
+                            <constraint firstItem="fqC-uQ-cde" firstAttribute="top" secondItem="4LJ-hg-2pg" secondAttribute="bottom" constant="15" id="kCB-bY-MaS"/>
+                            <constraint firstItem="ktL-gU-YhC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ybX-Wz-O06"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="FFT-hd-8oo"/>
+                    <connections>
+                        <outlet property="collectionView" destination="ktL-gU-YhC" id="tgl-Nz-ByG"/>
+                        <outlet property="eqcompView" destination="T9B-8n-ucS" id="27E-Ve-UFp"/>
+                        <outlet property="flowLayout" destination="pyk-sX-TVx" id="wgp-L0-1pk"/>
+                        <outlet property="goBackToStartButton" destination="FaY-RG-hMs" id="KZ8-Qv-95n"/>
+                        <outlet property="knob1" destination="dZQ-dY-8dt" id="EXj-5H-X0A"/>
+                        <outlet property="knob1ValueLabel" destination="t53-cy-8Ye" id="cfh-dz-KKH"/>
+                        <outlet property="knob2" destination="FQ7-l9-7jR" id="zcK-P4-zXk"/>
+                        <outlet property="knob2ValueLabel" destination="Mnb-Md-jTc" id="EtQ-mK-8Sh"/>
+                        <outlet property="knob3" destination="PUh-RT-cKe" id="3bC-AH-gVg"/>
+                        <outlet property="knob3ValueLabel" destination="y3l-5e-Xbq" id="PtK-fM-p12"/>
+                        <outlet property="knob4" destination="gwq-cm-Rhx" id="PnY-Rq-zdk"/>
+                        <outlet property="knob4ValueLabel" destination="jPH-Dh-bzR" id="vkW-S7-h98"/>
+                        <outlet property="knob5" destination="PYm-a4-Vzg" id="o5d-xU-xII"/>
+                        <outlet property="knob5ValueLabel" destination="TZ9-Nb-CCU" id="YwB-a2-XpW"/>
+                        <outlet property="knob6" destination="TGa-8V-1ml" id="fPJ-ei-Q4j"/>
+                        <outlet property="knob6ValueLabel" destination="DgV-qW-TUV" id="lbV-Za-hem"/>
+                        <outlet property="knob7" destination="zYF-HB-wqB" id="jbf-5P-Geu"/>
+                        <outlet property="knob7ValueLabel" destination="HUc-ph-sXo" id="HoB-s8-zmS"/>
+                        <outlet property="knob8" destination="U3S-gN-SJS" id="pv3-7y-NiP"/>
+                        <outlet property="knob8ValueLabel" destination="XK1-wf-D5V" id="dy0-vA-kpM"/>
+                        <outlet property="loopButton" destination="6jZ-5Y-OXU" id="Trm-7Y-Q04"/>
+                        <outlet property="playButton" destination="VwW-Va-eBa" id="Tfb-iM-Bbg"/>
+                        <outlet property="rewindButton" destination="pDU-JO-u43" id="dWu-El-goM"/>
+                        <outlet property="timeSlider" destination="fqC-uQ-cde" id="O7w-zv-rip"/>
+                        <outlet property="trackName" destination="I7x-mg-LEr" id="n1b-gz-mFH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.40000000000001" y="129.31034482758622"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.2.circlepath" catalog="system" width="128" height="101"/>
+        <image name="backward" catalog="system" width="128" height="79"/>
+        <image name="backward.end" catalog="system" width="128" height="120"/>
+        <image name="play" catalog="system" width="120" height="128"/>
+    </resources>
+</document>

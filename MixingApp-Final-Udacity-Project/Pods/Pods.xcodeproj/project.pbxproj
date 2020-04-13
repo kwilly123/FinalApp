@@ -1,0 +1,547 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0CF14F42F1CB4CB3D4F462C73DE4A048 /* VerticalSlider-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7814130C84A13BAA08194207E0F15256 /* VerticalSlider-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		16D277CE34D3D5E403A12032A95B8AA3 /* VerticalSlider-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1570A320E42E80C1D015ADD5D6C9D4 /* VerticalSlider-dummy.m */; };
+		17B7268BD7760045C69016A9F6E506E1 /* Pods-MixingApp-Final-Udacity-Project-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 232982CB455E367D85E4264F485A29D0 /* Pods-MixingApp-Final-Udacity-Project-dummy.m */; };
+		3B8827FFF6F280ED4B11A8BD1C37C47A /* VerticalSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735BB354592852E964F8B8E3575D7CB8 /* VerticalSlider.swift */; };
+		AED26ACD75A2F56EB38230132231A298 /* Pods-MixingApp-Final-Udacity-Project-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AA43611175205E1ED306B1FE77DB8100 /* Pods-MixingApp-Final-Udacity-Project-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		49DD632D89B1C1839B2E41215C2B9C25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4962333466F9BDEDC52F2ACC5A5A9C79;
+			remoteInfo = VerticalSlider;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06707C24F2B5AA2E82EA8C8207C0E363 /* Pods-MixingApp-Final-Udacity-Project-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MixingApp-Final-Udacity-Project-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1ACB58881535120A6F450391A2BC632A /* Pods-MixingApp-Final-Udacity-Project.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MixingApp-Final-Udacity-Project.modulemap"; sourceTree = "<group>"; };
+		232982CB455E367D85E4264F485A29D0 /* Pods-MixingApp-Final-Udacity-Project-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MixingApp-Final-Udacity-Project-dummy.m"; sourceTree = "<group>"; };
+		2B300F623E25727F3250E80AF57C78CD /* Pods-MixingApp-Final-Udacity-Project-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MixingApp-Final-Udacity-Project-acknowledgements.plist"; sourceTree = "<group>"; };
+		3D280B89868C608AB4E3BD84E65EF448 /* Pods-MixingApp-Final-Udacity-Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MixingApp-Final-Udacity-Project.debug.xcconfig"; sourceTree = "<group>"; };
+		48E388D857484B65467E210EF9B0A9A0 /* VerticalSlider.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VerticalSlider.xcconfig; sourceTree = "<group>"; };
+		4EFC1D5664048E460945E52D0582DE15 /* libPods-MixingApp-Final-Udacity-Project.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MixingApp-Final-Udacity-Project.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		627CD46DA10F23816E33FFC295F48356 /* VerticalSlider-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VerticalSlider-prefix.pch"; sourceTree = "<group>"; };
+		735BB354592852E964F8B8E3575D7CB8 /* VerticalSlider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VerticalSlider.swift; path = VerticalSlider/Classes/VerticalSlider.swift; sourceTree = "<group>"; };
+		7814130C84A13BAA08194207E0F15256 /* VerticalSlider-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VerticalSlider-umbrella.h"; sourceTree = "<group>"; };
+		9892A2CD2107195A8432146C5FE22B7C /* Pods-MixingApp-Final-Udacity-Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MixingApp-Final-Udacity-Project.release.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AA43611175205E1ED306B1FE77DB8100 /* Pods-MixingApp-Final-Udacity-Project-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MixingApp-Final-Udacity-Project-umbrella.h"; sourceTree = "<group>"; };
+		BBFED41D197916656590701B3CE698C1 /* VerticalSlider.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = VerticalSlider.modulemap; sourceTree = "<group>"; };
+		D22880FC1EC9C698A1F5FBD2F23D2E3D /* libVerticalSlider.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libVerticalSlider.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC1570A320E42E80C1D015ADD5D6C9D4 /* VerticalSlider-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VerticalSlider-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		478A08FF286B584434EB43C1714364DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		930069F12AB1C1603116680DB476B1D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13B239E71ECABC4974178A5CF8618F3B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6679CFD32E26A9F39765B8DED6331661 /* Pods-MixingApp-Final-Udacity-Project */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		2982371A2231E012AF7362198D5BF63C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BBFED41D197916656590701B3CE698C1 /* VerticalSlider.modulemap */,
+				48E388D857484B65467E210EF9B0A9A0 /* VerticalSlider.xcconfig */,
+				DC1570A320E42E80C1D015ADD5D6C9D4 /* VerticalSlider-dummy.m */,
+				627CD46DA10F23816E33FFC295F48356 /* VerticalSlider-prefix.pch */,
+				7814130C84A13BAA08194207E0F15256 /* VerticalSlider-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/VerticalSlider";
+			sourceTree = "<group>";
+		};
+		6679CFD32E26A9F39765B8DED6331661 /* Pods-MixingApp-Final-Udacity-Project */ = {
+			isa = PBXGroup;
+			children = (
+				1ACB58881535120A6F450391A2BC632A /* Pods-MixingApp-Final-Udacity-Project.modulemap */,
+				06707C24F2B5AA2E82EA8C8207C0E363 /* Pods-MixingApp-Final-Udacity-Project-acknowledgements.markdown */,
+				2B300F623E25727F3250E80AF57C78CD /* Pods-MixingApp-Final-Udacity-Project-acknowledgements.plist */,
+				232982CB455E367D85E4264F485A29D0 /* Pods-MixingApp-Final-Udacity-Project-dummy.m */,
+				AA43611175205E1ED306B1FE77DB8100 /* Pods-MixingApp-Final-Udacity-Project-umbrella.h */,
+				3D280B89868C608AB4E3BD84E65EF448 /* Pods-MixingApp-Final-Udacity-Project.debug.xcconfig */,
+				9892A2CD2107195A8432146C5FE22B7C /* Pods-MixingApp-Final-Udacity-Project.release.xcconfig */,
+			);
+			name = "Pods-MixingApp-Final-Udacity-Project";
+			path = "Target Support Files/Pods-MixingApp-Final-Udacity-Project";
+			sourceTree = "<group>";
+		};
+		99EEFE4F49B808C5D393E7E719FD8147 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FB3B6DF26BDCF6DCA055AC1EE98182CC /* VerticalSlider */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				99EEFE4F49B808C5D393E7E719FD8147 /* Pods */,
+				D5F8AD59978392C1C82C848F778EDD7A /* Products */,
+				13B239E71ECABC4974178A5CF8618F3B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D5F8AD59978392C1C82C848F778EDD7A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4EFC1D5664048E460945E52D0582DE15 /* libPods-MixingApp-Final-Udacity-Project.a */,
+				D22880FC1EC9C698A1F5FBD2F23D2E3D /* libVerticalSlider.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB3B6DF26BDCF6DCA055AC1EE98182CC /* VerticalSlider */ = {
+			isa = PBXGroup;
+			children = (
+				735BB354592852E964F8B8E3575D7CB8 /* VerticalSlider.swift */,
+				2982371A2231E012AF7362198D5BF63C /* Support Files */,
+			);
+			path = VerticalSlider;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		41A11D77CC6C080196B904CD89C3AA0A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CF14F42F1CB4CB3D4F462C73DE4A048 /* VerticalSlider-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50DBB4DF014FA8FD93EF074CDDBC57CD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AED26ACD75A2F56EB38230132231A298 /* Pods-MixingApp-Final-Udacity-Project-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		098D0B35EC6891DD07DD3B610B2AAEB2 /* Pods-MixingApp-Final-Udacity-Project */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FACA6FBAAEAA4666060E68B291AC1FB /* Build configuration list for PBXNativeTarget "Pods-MixingApp-Final-Udacity-Project" */;
+			buildPhases = (
+				50DBB4DF014FA8FD93EF074CDDBC57CD /* Headers */,
+				0FC66F1A26EA415BCFE0BFB6EA4E3B34 /* Sources */,
+				478A08FF286B584434EB43C1714364DC /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9650517B847733019431E81B54C094B7 /* PBXTargetDependency */,
+			);
+			name = "Pods-MixingApp-Final-Udacity-Project";
+			productName = "Pods-MixingApp-Final-Udacity-Project";
+			productReference = 4EFC1D5664048E460945E52D0582DE15 /* libPods-MixingApp-Final-Udacity-Project.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		4962333466F9BDEDC52F2ACC5A5A9C79 /* VerticalSlider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC7850ADDBDB82CF250171775A0FB7C4 /* Build configuration list for PBXNativeTarget "VerticalSlider" */;
+			buildPhases = (
+				41A11D77CC6C080196B904CD89C3AA0A /* Headers */,
+				B5226206D22D57FCAAB9859AE1487CE4 /* Sources */,
+				930069F12AB1C1603116680DB476B1D8 /* Frameworks */,
+				984F62850D3C47A1C960666C91D9EB2B /* Copy generated compatibility header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VerticalSlider;
+			productName = VerticalSlider;
+			productReference = D22880FC1EC9C698A1F5FBD2F23D2E3D /* libVerticalSlider.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					4962333466F9BDEDC52F2ACC5A5A9C79 = {
+						LastSwiftMigration = 1140;
+					};
+				};
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = D5F8AD59978392C1C82C848F778EDD7A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				098D0B35EC6891DD07DD3B610B2AAEB2 /* Pods-MixingApp-Final-Udacity-Project */,
+				4962333466F9BDEDC52F2ACC5A5A9C79 /* VerticalSlider */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		984F62850D3C47A1C960666C91D9EB2B /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/VerticalSlider/VerticalSlider.modulemap",
+				"${PODS_ROOT}/Headers/Public/VerticalSlider/VerticalSlider-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/VerticalSlider-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/VerticalSlider/VerticalSlider.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/VerticalSlider/VerticalSlider-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0FC66F1A26EA415BCFE0BFB6EA4E3B34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17B7268BD7760045C69016A9F6E506E1 /* Pods-MixingApp-Final-Udacity-Project-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5226206D22D57FCAAB9859AE1487CE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16D277CE34D3D5E403A12032A95B8AA3 /* VerticalSlider-dummy.m in Sources */,
+				3B8827FFF6F280ED4B11A8BD1C37C47A /* VerticalSlider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9650517B847733019431E81B54C094B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VerticalSlider;
+			target = 4962333466F9BDEDC52F2ACC5A5A9C79 /* VerticalSlider */;
+			targetProxy = 49DD632D89B1C1839B2E41215C2B9C25 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		23C15DA08979A096B7BBB9A9697A16EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9892A2CD2107195A8432146C5FE22B7C /* Pods-MixingApp-Final-Udacity-Project.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MixingApp-Final-Udacity-Project/Pods-MixingApp-Final-Udacity-Project.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		939F1A8F6BCEB7F9F64D9EEE50CAE014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		B6476B96F9709C594FDB538170BE18E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D280B89868C608AB4E3BD84E65EF448 /* Pods-MixingApp-Final-Udacity-Project.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MixingApp-Final-Udacity-Project/Pods-MixingApp-Final-Udacity-Project.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B9A07540C354477B9F0A75157B88D398 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48E388D857484B65467E210EF9B0A9A0 /* VerticalSlider.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/VerticalSlider/VerticalSlider-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/VerticalSlider/VerticalSlider.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = VerticalSlider;
+				PRODUCT_NAME = VerticalSlider;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC2D9210E9AEF0ACC05F9B5A23A7341C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48E388D857484B65467E210EF9B0A9A0 /* VerticalSlider.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/VerticalSlider/VerticalSlider-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/VerticalSlider/VerticalSlider.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = VerticalSlider;
+				PRODUCT_NAME = VerticalSlider;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ECB437504DF805BD96CAABF97400B526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				939F1A8F6BCEB7F9F64D9EEE50CAE014 /* Debug */,
+				ECB437504DF805BD96CAABF97400B526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FACA6FBAAEAA4666060E68B291AC1FB /* Build configuration list for PBXNativeTarget "Pods-MixingApp-Final-Udacity-Project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6476B96F9709C594FDB538170BE18E6 /* Debug */,
+				23C15DA08979A096B7BBB9A9697A16EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC7850ADDBDB82CF250171775A0FB7C4 /* Build configuration list for PBXNativeTarget "VerticalSlider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC2D9210E9AEF0ACC05F9B5A23A7341C /* Debug */,
+				B9A07540C354477B9F0A75157B88D398 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
